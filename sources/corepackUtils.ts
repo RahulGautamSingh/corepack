@@ -137,7 +137,7 @@ function isValidBinSpec(x: unknown): x is BinSpec {
 async function download(installTarget: string, url: string, algo: string, binPath: string | null = null): Promise<DownloadSpec> {
   // Creating a temporary folder inside the install folder means that we
   // are sure it'll be in the same drive as the destination, so we can
-  // just move it there atomically once we are done
+  // just move it there automically once we are done
 
   const tmpFolder = folderUtils.getTemporaryFolder(installTarget);
   debugUtils.log(`Downloading to ${tmpFolder}`);
